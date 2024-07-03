@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply text-darkColorLight bg-primaryColorLight tracking-wider font-poppins font-normalSize;
+    }
+
+    section{
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+@layer components{
+    .btn{
+        @apply inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-300
+    }
+    .btn-primary{
+        @apply text-blackcolor bg-primaryColor hover:opacity-75;
+    }
+    
+}
+@layer utilities {
+ .home__title,
+ .card__title{
+    @apply text-4xl font-Pacifico uppercase lg:text-6xl;
+ }
+ .seperator{
+    @apply w-28 h-[2px] bg-secondaryColor my-5;
+ }
+ .paragraph,
+ .paragraphlight
+ {
+    @apply text-paragraphColor text-xs leading-5
+ }
+
+ .paragraphlight{
+    @apply text-whitelightColour
+ }
+ .card__title{
+    @apply text-sm
+ }
+ .section__title{
+    @apply text-3xl
+ }
+}
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+    @apply bg-secondaryColor text-whitelightColour
+}
